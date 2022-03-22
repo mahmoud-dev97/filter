@@ -1,0 +1,42 @@
+body {
+  display: grid;
+  grid-template-rows: repeat(2, auto);
+  gap: 30px;
+  justify-content: center;
+}
+nav {
+  border-bottom: 1px dashed rgba(0, 0, 0, 0.521);
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  justify-content: start;
+}
+li {
+  display: inline-block;
+  text-decoration: none;
+  margin-left: 20px;
+  padding: 8px 15px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+nav .active {
+  color: black;
+  background: linear-gradient(45deg, #d2454d, #fcd1db);
+}
+#pic div {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+#pic img {
+  /* display: none; */
+  width: 100%;
+  height: 100%;
+}
+#pic .new {
+  display: none;
+}
+#pic .active {
+  display: grid;
+}
